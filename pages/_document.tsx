@@ -1,10 +1,10 @@
 import * as React from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-import createEmotionServer from '@emotion/server/create-instance';
-import theme from '../src/lib/theme';
-import createEmotionCache from '../src/lib/createEmotionCache';
-import * as gtag from '../src/lib/gtag';
 import Script from 'next/script'
+import createEmotionServer from '@emotion/server/create-instance';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import theme from '../src/core/lib/theme';
+import * as gtag from '../src/core/lib/gtag';
+import createEmotionCache from '../src/core/lib/createEmotionCache';
 
 export default class MyDocument extends Document {
   render() {
@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
           {(this.props as any).emotionStyleTags}
         </Head>
         <body>
-          <Main />
+          <Main/>
           <NextScript />
           <Script
             strategy="afterInteractive"

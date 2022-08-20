@@ -5,12 +5,12 @@ import { AppProps, NextWebVitalsMetric } from 'next/app';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider, EmotionCache } from '@emotion/react';
-import theme from '../src/lib/theme';
-import createEmotionCache from '../src/lib/createEmotionCache';
-import * as gtag from '../src/lib/gtag';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import theme from '../src/core/lib/theme';
+import * as gtag from '../src/core/lib/gtag';
 import Layout from '../src/components/layout/layout'
+import createEmotionCache from '../src/core/lib/createEmotionCache';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();

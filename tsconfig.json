@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/lib/theme.js", "src/lib/createEmotionCache.js", "src/lib/gtag.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/lib/theme.js", "src/lib/createEmotionCache.js", "src/lib/gtag.js", "src/core/svg-icons/index.js", "src/core/svg-icons/svgIcon.tsx"],
   "exclude": ["node_modules"]
 }
