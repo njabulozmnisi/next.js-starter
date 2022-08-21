@@ -1,11 +1,11 @@
 import React, { ReactElement } from "react";
-import Navbar from './navbar'
+import Header from './header'
 import Footer from './footer'
 
 export default function Layout({ children }: { children: ReactElement} ) {
   return (
     <>
-      <Navbar />
+      <Header />
       <main className="min-h-[72vh]">{children}</main>
       <Footer />
     </>

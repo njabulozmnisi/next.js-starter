@@ -1,5 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */
-import Icon from '@mui/material/Icon';
+import SvgIcon from '../../core/svg-icons';
 import { navigation } from '../../store/navigation';
 
 export default function Footer() {
@@ -17,9 +16,9 @@ export default function Footer() {
         </nav>
         <div className="mt-8 flex justify-center space-x-6">
           {navigation.social.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+            <a key={item.name} href={item.href} className="no-underline text-gray-400 hover:text-gray-500">
               <span className="sr-only">{item.name}</span>
-              {/* <item.icon className="h-6 w-6" aria-hidden="true" /> */}
+              <SvgIcon>{item.icon}</SvgIcon>
             </a>
           ))}
         </div>

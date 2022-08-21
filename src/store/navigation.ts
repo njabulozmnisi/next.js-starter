@@ -8,38 +8,38 @@ export interface navigation {
 
 export const navigation: { main: navigation[],  social: navigation[], } = {
     main: [
+      { name: 'Home', href: '#' },
+      { name: 'Services', href: '#' },
       { name: 'About', href: '#' },
-      { name: 'Blog', href: '#' },
-      { name: 'Jobs', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Accessibility', href: '#' },
-      { name: 'Partners', href: '#' },
+      { name: 'Team', href: '#' },
+      { name: 'News', href: '#' },
+      { name: 'Contact', href: '#' },
     ],
     social: [
       {
         name: 'Facebook',
         href: '#',
-        icon: ''
+        icon: 'feather:facebook'
       },
       {
         name: 'Instagram',
         href: '#',
-        icon: ''
+        icon: 'feather:instagram'
       },
       {
         name: 'Twitter',
         href: '#',
-        icon: ''
+        icon: 'feather:twitter'
       },
       {
-        name: 'GitHub',
+        name: 'LinkedIn',
         href: '#',
-        icon: ''
+        icon: 'feather:linkedin'
       },
       {
-        name: 'Dribbble',
+        name: 'YouTube',
         href: '#',
-        icon: ''
+        icon: 'feather:youtube'
       },
     ],
   }
